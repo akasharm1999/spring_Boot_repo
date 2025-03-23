@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;  
-
-
+import org.springframework.web.bind.annotation.RestController;
 
 import com.bank.model.UserEntity;
 import com.bank.service.UserService;
@@ -40,6 +38,7 @@ public class UserController {
 	public Optional<UserEntity> getUserById(@PathVariable String id) {
 		return userService.getUserById(id);
 	}
+
 
 	// Update a user
 	@PutMapping("/{id}")
